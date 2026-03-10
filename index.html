@@ -14,72 +14,15 @@
 
 <h2>Form Input Hand Hygiene</h2>
 
-<form id="hhForm">
+<form id="hhForm" class="form-hh">
 
-<div class="table-container">
-
-<table class="table-hh">
-
-<thead>
-
-<tr>
-<th>Tanggal</th>
-<th>Ruangan</th>
-<th>Nama Staf</th>
-<th>Total Opportunity</th>
-
-<th colspan="4">Moment 1</th>
-<th colspan="4">Moment 2</th>
-<th colspan="4">Moment 3</th>
-<th colspan="4">Moment 4</th>
-<th colspan="4">Moment 5</th>
-</tr>
-
-<tr>
-
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-
-<th>Opp</th>
-<th>HW</th>
-<th>HR</th>
-<th>TDK</th>
-
-<th>Opp</th>
-<th>HW</th>
-<th>HR</th>
-<th>TDK</th>
-
-<th>Opp</th>
-<th>HW</th>
-<th>HR</th>
-<th>TDK</th>
-
-<th>Opp</th>
-<th>HW</th>
-<th>HR</th>
-<th>TDK</th>
-
-<th>Opp</th>
-<th>HW</th>
-<th>HR</th>
-<th>TDK</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
+<div class="form-group">
+<label>Tanggal</label>
 <input type="date" name="tanggal">
-</td>
+</div>
 
-<td>
+<div class="form-group">
+<label>Ruangan</label>
 <select name="ruangan">
 <option>Radiologi</option>
 <option>IGD</option>
@@ -90,50 +33,163 @@
 <option>Rawat Inap</option>
 <option>Poliklinik</option>
 </select>
-</td>
+</div>
 
-<td>
+<div class="form-group">
+<label>Nama Staf</label>
 <input type="text" name="nama_staff" class="nama-staf" placeholder="Nama staf diamati">
-</td>
+</div>
 
-<td>
+<div class="form-group">
+<label>Total Opportunity</label>
 <input type="text" id="total1" name="total" readonly>
-</td>
+</div>
 
-<td><input type="number" class="calc1" name="m1_opp"></td>
-<td><input type="number" class="calc1" name="m1_hw"></td>
-<td><input type="number" class="calc1" name="m1_hr"></td>
-<td><input type="number" class="calc1" name="m1_tdk"></td>
 
-<td><input type="number" class="calc1" name="m2_opp"></td>
-<td><input type="number" class="calc1" name="m2_hw"></td>
-<td><input type="number" class="calc1" name="m2_hr"></td>
-<td><input type="number" class="calc1" name="m2_tdk"></td>
+<!-- MOMENT 1 -->
+<div class="moment-box">
+<h3>Moment 1</h3>
 
-<td><input type="number" class="calc1" name="m3_opp"></td>
-<td><input type="number" class="calc1" name="m3_hw"></td>
-<td><input type="number" class="calc1" name="m3_hr"></td>
-<td><input type="number" class="calc1" name="m3_tdk"></td>
+<div class="grid">
+<div>
+<label>Opportunity</label>
+<input type="number" class="calc1" name="m1_opp">
+</div>
 
-<td><input type="number" class="calc1" name="m4_opp"></td>
-<td><input type="number" class="calc1" name="m4_hw"></td>
-<td><input type="number" class="calc1" name="m4_hr"></td>
-<td><input type="number" class="calc1" name="m4_tdk"></td>
+<div>
+<label>HW</label>
+<input type="number" class="calc1" name="m1_hw">
+</div>
 
-<td><input type="number" class="calc1" name="m5_opp"></td>
-<td><input type="number" class="calc1" name="m5_hw"></td>
-<td><input type="number" class="calc1" name="m5_hr"></td>
-<td><input type="number" class="calc1" name="m5_tdk"></td>
+<div>
+<label>HR</label>
+<input type="number" class="calc1" name="m1_hr">
+</div>
 
-</tr>
-
-</tbody>
-
-</table>
+<div>
+<label>TDK</label>
+<input type="number" class="calc1" name="m1_tdk">
+</div>
+</div>
 
 </div>
 
-<br>
+
+<!-- MOMENT 2 -->
+<div class="moment-box">
+<h3>Moment 2</h3>
+
+<div class="grid">
+<div>
+<label>Opportunity</label>
+<input type="number" class="calc1" name="m2_opp">
+</div>
+
+<div>
+<label>HW</label>
+<input type="number" class="calc1" name="m2_hw">
+</div>
+
+<div>
+<label>HR</label>
+<input type="number" class="calc1" name="m2_hr">
+</div>
+
+<div>
+<label>TDK</label>
+<input type="number" class="calc1" name="m2_tdk">
+</div>
+</div>
+
+</div>
+
+
+<!-- MOMENT 3 -->
+<div class="moment-box">
+<h3>Moment 3</h3>
+
+<div class="grid">
+<div>
+<label>Opportunity</label>
+<input type="number" class="calc1" name="m3_opp">
+</div>
+
+<div>
+<label>HW</label>
+<input type="number" class="calc1" name="m3_hw">
+</div>
+
+<div>
+<label>HR</label>
+<input type="number" class="calc1" name="m3_hr">
+</div>
+
+<div>
+<label>TDK</label>
+<input type="number" class="calc1" name="m3_tdk">
+</div>
+</div>
+
+</div>
+
+
+<!-- MOMENT 4 -->
+<div class="moment-box">
+<h3>Moment 4</h3>
+
+<div class="grid">
+<div>
+<label>Opportunity</label>
+<input type="number" class="calc1" name="m4_opp">
+</div>
+
+<div>
+<label>HW</label>
+<input type="number" class="calc1" name="m4_hw">
+</div>
+
+<div>
+<label>HR</label>
+<input type="number" class="calc1" name="m4_hr">
+</div>
+
+<div>
+<label>TDK</label>
+<input type="number" class="calc1" name="m4_tdk">
+</div>
+</div>
+
+</div>
+
+
+<!-- MOMENT 5 -->
+<div class="moment-box">
+<h3>Moment 5</h3>
+
+<div class="grid">
+<div>
+<label>Opportunity</label>
+<input type="number" class="calc1" name="m5_opp">
+</div>
+
+<div>
+<label>HW</label>
+<input type="number" class="calc1" name="m5_hw">
+</div>
+
+<div>
+<label>HR</label>
+<input type="number" class="calc1" name="m5_hr">
+</div>
+
+<div>
+<label>TDK</label>
+<input type="number" class="calc1" name="m5_tdk">
+</div>
+</div>
+
+</div>
+
 
 <button type="submit">Simpan Data</button>
 
