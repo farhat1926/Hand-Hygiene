@@ -1,0 +1,62 @@
+body{
+font-family: Arial;
+background:#f4f6f9;
+padding:20px;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+.table-hh{
+width:100%;
+border-collapse:collapse;
+background:white;
+}
+
+.table-hh th{
+background:#f0f0f0;
+padding:10px;
+border:1px solid #ddd;
+}
+
+.table-hh td{
+border:1px solid #ddd;
+padding:5px;
+text-align:center;
+}
+
+.table-hh input{
+width:60px;
+padding:5px;
+text-align:center;
+}
+
+.table-hh select{
+padding:5px;
+}
+.nama-staf{
+width:220px;
+padding:6px;
+text-align:left;
+}
+
+.table-hh input[type="number"]{
+width:55px;
+}
+
+.table-hh input[type="date"]{
+width:140px;
+}
+.table-hh input.nama-staf{
+width:250px;
+text-align:left;
+}
+button{
+    text-align: center;
+    top: 50px;
+    width: 80px;
+    height: 20%;
+    border-radius: 0.9px;
+    background-color: aqua;
+}
