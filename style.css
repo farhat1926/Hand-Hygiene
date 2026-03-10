@@ -1,62 +1,118 @@
 body{
-font-family: Arial;
+font-family: "Segoe UI", Arial, sans-serif;
 background:#f4f6f9;
-padding:20px;
+padding:30px;
+color:#333;
 }
 
 h2{
 margin-bottom:20px;
+font-weight:600;
+color:#2c3e50;
 }
 
+/* container */
 .table-hh{
 width:100%;
 border-collapse:collapse;
 background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
-.table-hh th{
-background:#f0f0f0;
-padding:10px;
-border:1px solid #ddd;
+/* header utama */
+.table-hh thead tr:first-child th{
+background:#2c8f7b;
+color:white;
+font-weight:600;
+font-size:14px;
+padding:12px;
 }
 
+/* sub header */
+.table-hh thead tr:nth-child(2) th{
+background:#eaf6f3;
+font-size:13px;
+}
+
+/* cell */
+.table-hh th,
 .table-hh td{
-border:1px solid #ddd;
-padding:5px;
+border:1px solid #e3e6ea;
+padding:8px;
 text-align:center;
 }
 
+/* hover row */
+.table-hh tbody tr:hover{
+background:#f8fbfa;
+}
+
+/* input umum */
 .table-hh input{
 width:60px;
-padding:5px;
-text-align:center;
+padding:6px;
+border-radius:6px;
+border:1px solid #dcdfe3;
+font-size:13px;
+transition:0.2s;
 }
 
-.table-hh select{
-padding:5px;
+/* focus input */
+.table-hh input:focus{
+outline:none;
+border-color:#2c8f7b;
+box-shadow:0 0 3px rgba(44,143,123,0.3);
 }
-.nama-staf{
-width:220px;
+
+/* select */
+.table-hh select{
 padding:6px;
+border-radius:6px;
+border:1px solid #dcdfe3;
+background:white;
+}
+
+/* kolom nama staf */
+.table-hh input.nama-staf{
+width:240px;
 text-align:left;
 }
 
+/* tanggal */
+.table-hh input[type="date"]{
+width:140px;
+}
+
+/* number */
 .table-hh input[type="number"]{
 width:55px;
 }
 
-.table-hh input[type="date"]{
-width:140px;
+/* total opportunity */
+#total1{
+background:#f1f8f6;
+font-weight:600;
+color:#2c8f7b;
 }
-.table-hh input.nama-staf{
-width:250px;
-text-align:left;
-}
+
+/* tombol simpan */
 button{
-    text-align: center;
-    top: 50px;
-    width: 80px;
-    height: 20%;
-    border-radius: 0.9px;
-    background-color: aqua;
+margin-top:15px;
+padding:10px 22px;
+background:linear-gradient(135deg,#1abc9c,#16a085);
+border:none;
+color:white;
+font-size:14px;
+font-weight:600;
+border-radius:8px;
+cursor:pointer;
+transition:0.25s;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+button:hover{
+background:linear-gradient(135deg,#16a085,#149174);
+transform:translateY(-2px);
 }
